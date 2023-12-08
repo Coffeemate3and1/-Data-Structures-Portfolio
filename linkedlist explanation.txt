@@ -1,0 +1,4 @@
+The code defines a linked list where each node holds an integer value.
+The LinkedList class provides methods to insert elements at the end of the list and display the contents of the list.
+In the main method, it demonstrates inserting elements into the linked list (2, 4, and 6) and then displays the contents of the list.
+The output will show: Linked List elements: 2 4 6, indicating the three elements in the linked list in the order they were inserted.

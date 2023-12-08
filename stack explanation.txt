@@ -1,0 +1,8 @@
+
+The code implements a stack data structure in Java using an array. 
+It initializes a stack with a specified size and provides methods 
+to perform typical stack operations such as push, pop, check if the 
+stack is empty or full, get the size, and print the elements. 
+The main method demonstrates the stack operations by creating a stack,
+ pushing elements, displaying the elements, showing the top element,
+ popping elements, and displaying the remaining elements after popping.

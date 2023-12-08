@@ -1,0 +1,8 @@
+
+
+
+The Node class represents individual nodes in the tree with an integer value, left, and right child references.
+The Main class initializes the root of the tree and contains a method countLeaf to recursively count the leaf nodes in the binary tree.
+In the main method of the Main class, a binary tree is constructed by creating nodes and linking them together.
+The countLeaf method recursively counts the leaf nodes (nodes with no children) in the binary tree.
+Finally, the code prints out the total number of leaf nodes in the tree as the output.

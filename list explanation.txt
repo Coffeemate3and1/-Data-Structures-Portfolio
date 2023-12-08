@@ -1,0 +1,7 @@
+
+
+This Java code defines a Circular Linked List where nodes are added and displayed. 
+It first prompts the user to input data for several nodes and then creates a circular 
+linked list with these nodes. The add function adds new nodes to the circular linked list, 
+and the display function prints the nodes of the list. Finally, the code calculates and 
+displays the sum of the data stored in all nodes of the circular linked list.

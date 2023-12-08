@@ -1,0 +1,24 @@
+Node Class: 
+
+Defines the structure of a node in a binary tree with integer values for 
+keys and references to left and right child nodes.
+
+BinaryTree Class: Encapsulates the binary tree logic.
+
+ *Constructors initialize the binary tree, optionally with a root key or a default empty tree.
+ *Contains an inorderTraversal method to perform an inorder traversal recursively:
+
+Main Method:
+
+*Initializes a binary tree with a root node having a key of 1.
+*Manually constructs a binary tree by assigning left and right child nodes to the root and its descendants.
+*The constructed tree has the following structure:
+
+
+Performs an inorder traversal starting from the root and prints the elements in ascending order (inorder).
+The output demonstrates the inorder traversal of the binary tree.
+
+
+
+
+

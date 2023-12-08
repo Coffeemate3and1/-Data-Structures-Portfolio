@@ -1,0 +1,31 @@
+Explanation:
+
+Graph Class:
+
+Graph class represents an undirected graph using an adjacency list.
+It contains:
+V: The number of vertices in the graph.
+adjacencyList: An array of LinkedList where each index corresponds to a vertex and stores its adjacent vertices.
+Constructor:
+
+Graph(int V): Initializes the graph with the given number of vertices (V). It creates an empty adjacency list for each vertex.
+addEdge() Method:
+
+void addEdge(int v, int w): Adds an edge between vertices v and w.
+It does this by adding w to the adjacency list of v and v to the adjacency list of w, as it is an undirected graph.
+printGraph() Method:
+
+void printGraph(): Displays the adjacency list representation of the graph.
+It iterates through each vertex's adjacency list and prints the adjacent vertices.
+main() Method:
+
+Initializes a graph with 5 vertices.
+Adds edges between these vertices using addEdge() method.
+Finally, it displays the adjacency list representation of the graph using printGraph() method.
+This code creates a simple undirected graph with 5 vertices and adds edges between them based on the addEdge() calls. It then prints out the adjacency list representation for each vertex in the graph using the printGraph() method.
+
+
+
+
+
+
