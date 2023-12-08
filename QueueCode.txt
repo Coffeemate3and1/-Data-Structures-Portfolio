@@ -1,0 +1,63 @@
+public class MyQueue {
+    private static final int MAX_SIZE = 100;
+    private int[] queueArray;
+    private int front;
+    private int rear;
+
+    public MyQueue() {
+        queueArray = new int[MAX_SIZE];
+        front = 0;
+        rear = -1;
+    }
+
+    public boolean isEmpty() {
+        return (front == rear + 1);
+    }
+
+    public boolean isFull() {
+        return (rear == MAX_SIZE - 1);
+    }
+
+    public void enqueue(int data) {
+        if (isFull()) {
+            System.out.println("Queue is full, cannot enqueue.");
+        } else {
+            queueArray[++rear] = data;
+        }
+    }
+
+    public int dequeue() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty, cannot dequeue.");
+            return -1;
+        } else {
+            int data = queueArray[front++];
+            return data;
+        }
+    }
+
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty, cannot peek.");
+            return -1;
+        } else {
+            return queueArray[front];
+        }
+    }
+
+    public int size() {
+        return rear - front + 1;
+    }
+
+    public static void main(String[] args) {
+        MyQueue queue = new MyQueue();
+
+        queue.enqueue(10);
+        queue.enqueue(20);
+        queue.enqueue(30);
+
+        System.out.println("Dequeued: " + queue.dequeue());
+        System.out.println("Front element: " + queue.peek());
+        System.out.println("Queue size: " + queue.size());
+    }
+}

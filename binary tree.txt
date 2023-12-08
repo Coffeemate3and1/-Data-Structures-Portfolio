@@ -1,0 +1,55 @@
+class Node {
+    int key;
+    Node left, right;
+
+    public Node(int item) {
+        key = item;
+        left = right = null;
+    }
+}
+
+public class Main {
+
+    static class BinaryTree {
+        Node root;
+
+        BinaryTree(int key) {
+            root = new Node(key);
+        }
+
+        BinaryTree() {
+            root = null;
+        }
+
+        // Method to perform inorder traversal of the binary tree
+        public void inorderTraversal(Node node) {
+            if (node != null) {
+                inorderTraversal(node.left);
+                System.out.print(node.key + " ");
+                inorderTraversal(node.right);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        BinaryTree tree = new BinaryTree(1); // Initialize BinaryTree with a root value
+
+        // Manually creating a binary tree
+        tree.root.left = new Node(2);
+        tree.root.right = new Node(3);
+        tree.root.left.left = new Node(4);
+        tree.root.left.right = new Node(5);
+
+        /*  Constructed Binary Tree:
+                  1
+                /   \
+               2     3
+              / \
+             4   5
+        */
+
+        // Printing elements of the binary tree using inorder traversal
+        System.out.println("Inorder Traversal:");
+        tree.inorderTraversal(tree.root);
+    }
+}
